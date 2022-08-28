@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <h1>PEXON HOMEWORK</h1>
+    </nav>
+
+    <div class="container with-nav">
+      <div class="card">
+        <h2>Hello Pexonian, trage hier deine Zertifizierungen ein!</h2>
+
+        <form action="/" method="POST">
+          <div class="form-control">
+            <input
+              name="content"
+              type="text"
+              id="content"
+              placeholder="Tippe hier Deine Zertifizierungen ein"
+            />
+          </div>
+
+          <button type="submit" class="btn primary">ADD</button>
+        </form>
+        <hr />
+
+        <!-- TODO Zerifikaten Aufzahlung -->
+
+      </div>
+    </div>
+  </body>
+</html>
