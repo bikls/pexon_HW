@@ -33,8 +33,17 @@
         </form>
         <hr />
 
-        <!-- TODO Zerifikaten Aufzahlung -->
+        <!-- Zerifikaten Aufzahlung -->
 
+        {% if certification|length < 1 %}
+        <h4>Du hast noch keine Zertifikate</h4>
+        {% else %} {% for certificate in certification %}
+
+        <ul>
+          {{ certificate.content }}
+        </ul>
+
+        {% endfor %} {% endif %}
       </div>
     </div>
   </body>
